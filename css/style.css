@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20%;
+}
+
+li,a
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.navLinks
+{
+    line-style: none;
+}
+
+.navLinks li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a
+{
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover
+{
+    color: dimgray;
+    text-decoration: underline;
+}
+
+.btn-1
+{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    background-color: #9FC1D3;
+    font-size: medium;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 rgb(63, 100, 126);
+    transition: ease-out 0.3s;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-1:hover
+{
+    box-shadow: inset 100px 0 0 0 rgb(63, 100, 126);
+    cursor: pointer;
+}
+
+
+body 
+{
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.bg
+{
+    background: url("/assets/bg1.jpg");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 95%;
+    height: 100%;
+}
+
+.text_wraper {
+    margin-top: 200px;
+    height: 110px;
+    overflow-y: hidden;
+}
+
+.text_wraper .innerText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 110px;
+    font-size: 95px;
+    color: #fff;
+}
+
+.navwrapper
+{
+    /* background-color:#677c8a;191D20*/
+    background-color:transparent;
+    height: 90px;
+}
+
+.t2wrap
+{
+    display: inline-block;
+    /* margin-top: 30px; */
+    /* margin-left: 10%; */
+    height:740px;
+    /* width: 80%; */
+    background-color: rgba(0,0,10); /* Black w/opacity/see-through */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.t2wrap h1
+{
+    font-size: 50px;
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    /* text-decoration: underline; */
+}
+
+.t2wrap h3
+{
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 200px;
+    color: #fff;
+    z-index: 2;
+    text-align: justify;
+    text-shadow: 5px;
+}
+
+.article
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.imgart
+{
+    margin-top: 80px;
+    height: 600px;
+    width: 1000px;
+}
+
+.bghome
+{
+    background: url("/assets/hometown.png");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    height: 100vh;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+}
+
+.bghome::before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    transform-origin: center center 0;
+    transform: translate(-1px) scale(2);
+    min-height: 100vh;
+}
+
+.bghome h1
+{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 250px;
+    margin-top: 0;
+}
+.bghome h2
+{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: auto;
+    margin-top: 0;
+}
+
+.sbubble
+{
+    width: 1400px;
+    height: 240px;
+    top: 40px;
+    left: 50px;
+    background: #d7d7d7;
+    position: relative;
+    background-size: cover;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    margin-block-end: 20px;
+}
+
+.sbubble:hover
+{
+    width: 1400px;
+    height: 240px;
+    top: 40px;
+    left: 50px;
+    background: #edf0f1;
+    position: relative;
+    background-size: cover;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    margin-block-end: 20px;
+}
+
+.sbubble h1
+{
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.article h3
+{
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.foodart
+{
+    height: 180px;
+    width: auto;
+    padding-left: 580px;
+    padding-bottom: 40px;
+}
+
+#added
+{
+    height: 100px;
+}
+
+.bgfood
+{
+    background: url(/assets/foodbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .sbubble::before
+{
+    content: '';
+    position: absolute;
+    right: 80%;
+    top: 60px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 36px solid black;
+    border-bottom: 13px solid transparent;
+} */
