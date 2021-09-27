@@ -253,6 +253,200 @@ body
     background-repeat: no-repeat;
 }
 
+.bgtour
+{
+    background: url(/assets/kotatua.jpg);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    height: 100vh;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+}
+
+.bgtour::before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    transform-origin: center center 0;
+    transform: translate(-1px) scale(2);
+    min-height: 100vh;
+}
+
+.bgtour h1
+{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 250px;
+    margin-top: 0;
+}
+.bgtour h2
+{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: auto;
+    margin-top: 0;
+}
+
+.tourwrap
+{
+    display: inline-block;
+    width: 100%;
+    background-color: #c1b9c8bb; /* Black w/opacity/see-through */
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.tourbub
+{
+    margin: 40px;
+    width: 1400px;
+    height: 240px;
+    top: 40px;
+    left: 50px;
+    right: 50px;
+    background: #d7d7d7;
+    position: relative;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+#ancol
+{
+    background: url(/assets/ancol.jpg);
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+#ancol:hover .overlay
+{
+    opacity: 1;
+}
+
+#ancol:hover .gone
+{
+    opacity: 0;
+}
+
+#kotatua
+{
+    background: url(/assets/kotatua1.jpg);
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+}
+
+#kotatua:hover .overlay
+{
+    opacity: 1;
+}
+
+#kotatua:hover .gone
+{
+    opacity: 0;
+}
+
+#seaworld
+{
+    background: url(/assets/seaworld.jpg);
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+}
+
+#seaworld:hover .overlay
+{
+    opacity: 1;
+}
+
+#seaworld:hover .gone
+{
+    opacity: 0;
+}
+
+#monas
+{
+    background: url(/assets/monas1.jpg);
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    background-position-y: 85%;
+}
+
+#monas:hover .overlay
+{
+    opacity: 1;
+}
+
+#monas:hover .gone
+{
+    opacity: 0;
+}
+
+#tmii
+{
+    background: url(/assets/tmii.jpg);
+    background-size: 1400px 800px;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+}
+
+#tmii:hover .overlay
+{
+    opacity: 1;
+}
+
+#tmii:hover .gone
+{
+    opacity: 0;
+}
+
+.gone
+{
+    padding-top: 60px;
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1200px;
+    height: auto;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    background-color: transparent;
+    opacity: 0;
+    transition: 0.8s ease;
+    z-index: 0;
+}
+
+.overlay h1
+{
+    padding-left: 200px;
+    color: #000;
+    text-align: center;
+    text-shadow: 2px black;
+}
+
+.overlay h3
+{
+    color: #000 ;
+    text-align: center;
+    padding-left: 120px;
+}
+
+
 /* .sbubble::before
 {
     content: '';
