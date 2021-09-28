@@ -109,7 +109,7 @@ body
     display: inline-block;
     /* margin-top: 30px; */
     /* margin-left: 10%; */
-    height:auto;
+    height:99vh;
     width: auto;
     background-color: rgba(0,0,10); /* Black w/opacity/see-through */
     font-family: 'Courier New', Courier, monospace;
@@ -210,16 +210,14 @@ body
 
 #imageprofile
 {
-    height: 450px;
-    padding-right: 10%;
-    margin-left: 10%;
+    height: 600px;
 }
 
 .imageinprofile
 {
-    position: absolute;
-    top: 20%;
-    right: 20%;
+    position: absolute; 
+    right: 10%;
+    margin-top: 5%;
 }
 
 .sbubble h1
@@ -261,12 +259,6 @@ body
 {
     height: 100vh;
 }
-
-#profile
-{
-    background: #8495A5;
-}
-
 
 .colorbg
 {
@@ -516,16 +508,69 @@ body
     /* padding-left: 120px; */
 }
 
-.profile
+.bgprofile
+{
+    background: url(/assets/profilebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    z-index: -1;
+    height: 100vh;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+}
+
+.bgprofile::before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    transform-origin: center center 0;
+    transform: translate(-1px) scale(2);
+    min-height: 100vh;
+}
+
+.bgprofile h1
+{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 250px;
+    margin-top: 0;
+}
+
+.bgprofile h2
+{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: auto;
+    margin-top: 0;
+}
+
+.artprofile
 {
     display: flex;
     flex-direction: row;
-    /* padding-top: 5%; */
+}
+
+.profile
+{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile h1
+{
+    padding-top: 10%;
 }
 
 .profile h3
 {
-    width: 60%;
+    color: #000;
+    width: 55%;
+    height: 70vh;
 }
 
 .containerprof 
@@ -533,7 +578,6 @@ body
     width:100%;
     padding-left: 10%;
     padding-right: 15%;
-    margin-top: 10%;
 }
 
 .containerprof h1
@@ -541,6 +585,21 @@ body
     width: 50%;
 }
 
+.profilebg
+{
+    background: #C2D2E2;
+    background-size: cover;
+}
+
+.new
+{
+    position:relative;
+    width: 400px;
+    height: 5px;
+    background : linear-gradient(90deg, #261C2C 0%, #3E2C41 100%);
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
 
 /* .sbubble::before
 {
