@@ -109,7 +109,7 @@ body
     display: inline-block;
     /* margin-top: 30px; */
     /* margin-left: 10%; */
-    height:99vh;
+    height:100vh;
     width: auto;
     background-color: rgba(0,0,10); /* Black w/opacity/see-through */
     font-family: 'Courier New', Courier, monospace;
