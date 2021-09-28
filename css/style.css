@@ -109,10 +109,9 @@ body
     display: inline-block;
     /* margin-top: 30px; */
     /* margin-left: 10%; */
-    height:100%;
+    height:auto;
     width: auto;
     background-color: rgba(0,0,10); /* Black w/opacity/see-through */
-    background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
 }
