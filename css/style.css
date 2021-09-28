@@ -191,40 +191,35 @@ body
 
 .sbubble
 {
-    width: 1400px;
-    height: 240px;
+    width: 600px;
+    height: 600px;
     top: 40px;
-    left: 50px;
     background: #d7d7d7;
     position: relative;
     background-size: cover;
     border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    margin-block-end: 20px;
 }
 
-.sbubble:hover
+#imagefood
 {
-    width: 1400px;
-    height: 240px;
-    top: 40px;
-    left: 50px;
-    background: #edf0f1;
-    position: relative;
-    background-size: cover;
-    border-radius: 12px;
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    margin-block-end: 20px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sbubble h1
 {
     font-size: 25px;
-    padding-left: 20px;
-    padding-top: 20px;
+    text-align: center;
     text-decoration: underline;
+}
+
+.sbubble p
+{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
 }
 
 .article h3
@@ -246,11 +241,64 @@ body
     height: 100px;
 }
 
+#add
+{
+    height: 100vh;
+}
+
+.colorbg
+{
+    background: #8495A5;
+    height: fit-content;
+}
+
 .bgfood
 {
     background: url(/assets/foodbg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: 20%;
+    z-index: -1;
+    height: 100vh;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+}
+
+.bgfood::before
+{
+    content: "";
+    position: absolute;
+    display: block;
+    transform-origin: center center 0;
+    transform: translate(-1px) scale(2);
+    min-height: 100vh;
+}
+
+.bgfood h1
+{
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 250px;
+    margin-top: 0;
+}
+
+.bgfood h2
+{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: auto;
+    margin-top: 0;
+}
+
+.foodwrap
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 0px;
+    justify-items: center;
+    right: auto;
 }
 
 .bgtour
