@@ -7,7 +7,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20%;
+    padding: 30px 15%;
 }
 
 li,a
@@ -109,8 +109,8 @@ body
     display: inline-block;
     /* margin-top: 30px; */
     /* margin-left: 10%; */
-    height:740px;
-    /* width: 80%; */
+    height:auto;
+    width: auto;
     background-color: rgba(0,0,10); /* Black w/opacity/see-through */
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
@@ -208,6 +208,20 @@ body
     margin-right: auto;
 }
 
+#imageprofile
+{
+    height: 450px;
+    padding-right: 10%;
+    margin-left: 10%;
+}
+
+.imageinprofile
+{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
 .sbubble h1
 {
     font-size: 25px;
@@ -224,8 +238,10 @@ body
 
 .article h3
 {
-    text-align: justify;
-    padding-left: 20px;
+    text-align: center;
+    /* padding-left: 200px;
+    padding-right: 500px; */
+    padding-bottom: 10%;
 }
 
 .foodart
@@ -245,6 +261,12 @@ body
 {
     height: 100vh;
 }
+
+#profile
+{
+    background: #8495A5;
+}
+
 
 .colorbg
 {
@@ -353,11 +375,11 @@ body
 .tourbub
 {
     margin: 40px;
-    width: 1400px;
+    width: 1200px;
     height: 240px;
     top: 40px;
-    left: 50px;
-    right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     background: #d7d7d7;
     position: relative;
     background-size: cover;
@@ -481,7 +503,7 @@ body
 
 .overlay h1
 {
-    padding-left: 200px;
+    /* padding-left: 200px; */
     color: #000;
     text-align: center;
     text-shadow: 2px black;
@@ -491,7 +513,32 @@ body
 {
     color: #000 ;
     text-align: center;
-    padding-left: 120px;
+    /* padding-left: 120px; */
+}
+
+.profile
+{
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 5%; */
+}
+
+.profile h3
+{
+    width: 60%;
+}
+
+.containerprof 
+{
+    width:100%;
+    padding-left: 10%;
+    padding-right: 15%;
+    margin-top: 10%;
+}
+
+.containerprof h1
+{
+    width: 50%;
 }
 
 
