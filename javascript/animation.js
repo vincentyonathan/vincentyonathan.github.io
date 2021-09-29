@@ -2,10 +2,8 @@ let innerTexts = document.querySelectorAll('.text_wraper .innerText');
 if(innerTexts)
 {
     innerTexts.forEach(innerText=>{
-        /* make clone of first child start*/
         let firstText = innerText.firstElementChild.cloneNode('true');
         innerText.appendChild(firstText);
-        /* make clone of first child end*/
 
         let i= 0,
             speed= 2000,
@@ -23,7 +21,6 @@ if(innerTexts)
                 innerText.style.transform = `translateY(10px)`;
             }
 
-            // now change the value of i
             i = (i<step) ? (i+1) : 1;
         }, speed);
     });
