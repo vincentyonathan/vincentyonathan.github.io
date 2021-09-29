@@ -21,7 +21,14 @@ if(innerTexts)
                 innerText.style.transform = `translateY(10px)`;
             }
 
-            i = (i<step) ? (i+1) : 1;
+            if(i<step) 
+            {
+                i = i+1
+            }  
+            else
+            {
+                i = 1;
+            }
         }, speed);
     });
 }
